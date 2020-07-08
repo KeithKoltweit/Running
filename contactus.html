@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Contact Us</title>
+   <link rel="stylesheet" href="css/styles.css">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+</head>
+
+<body>
+
+   <header>
+      <img src="images/runnerbanner.jpg" class="banner" alt="picture of a guy running on the road">
+      <h1 id="title">Running 4 Beginners</h1>
+   </header>
+   <div class="navigation">
+      <nav class="sitenavigation">
+         <div class="nav-top">
+             <ul>
+             <li><a href="index.html">Home</a></li>
+             <li><a href="training.html">Training</a></li>
+             <li><a href="race.html">Races</a></li>
+         </ul>
+         </div>
+         <div class="nav-bottom">
+             <ul>
+             <li><a href="gear.html">Gear</a></li>
+             <li><a href="contactus.html">Contact Us</a></li>
+             <li><a href="project.html">Project Concepts</a></li>
+         </ul>
+         </div>
+     </nav>
+   </div>
+   <article id="contentstart">
+      <h2>Questions? Please reach out!</h2>
+      <p>Remember, there are no stupid question. We are here to help you out and reach those goals!</p>
+
+      <form class="contact-form" action="" name="form">
+         <p class="form-instructions">All fields are required</p>
+         <span id="error"></span>
+         <span id="error1"></span>
+         <fieldset class="contactinfo">
+            <div class="formInput">
+               <label for="nameinput">Name</label>
+               <input type="text" name="name" id="nameinput" class="nameinput" placeholder="Full name">
+
+            </div>
+            <div class="formInput">
+               <label for="phoneinput">Phone</label>
+               <input type="tel" name="phone" id="phoneinput" placeholder="(nnn) nnn - nnnn">
+
+            </div>
+            <div class="formInput">
+               <label for="emailinput">Email</label>
+               <input type="email" name="email" id="emailinput" class="emailinput" placeholder="example@123.com">
+
+            </div>
+            <div class="formInput">
+               <label for="addMail">I would like to be added to the mailing list!</label>
+               <input type="checkbox" name="addMail" id="addMail" value="yes">
+               <span id="thanks"></span>
+            </div>
+         </fieldset>
+         <fieldset class="additionalinfo">
+            <div class="formInput">
+               <label for="other-info">Feedback or questions</label>
+               <textarea name="other-info" id="other-info" class="other-info" rows="5" cols="50"></textarea>
+
+            </div>
+         </fieldset>
+         <div class="formButton">
+            <input type="button" id="submit" value="Submit" onclick="validateForm()">
+            <input type="reset" id="reset" value="Reset">
+         </div>
+      </form>
+   </article>
+   <footer class="footer">
+      <address>Running 4 Beginners &#8226; 123 Example Ave, Glendale Az &#8226; Email: <a
+            href="mailto:example@example.com">Begin2run@example.com</a></address>
+   </footer>
+
+   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js'></script>
+   <script src="js/contactus.js"></script>
+
+</body>
+
+</html>

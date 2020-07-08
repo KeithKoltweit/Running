@@ -1,0 +1,433 @@
+/* reset styles */
+html {
+    height: 100vh;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+/* header section */
+.banner {
+    max-width: 100%;
+    height: auto;
+}
+/* title positioned over banner */
+header {
+    position: relative;
+    text-align: center;
+    color: rgb(170, 36, 36);
+}
+header > h1 {
+    position: absolute;
+    text-align: center;
+    top: 10px;
+    left: 50px;
+    width: 100px;
+    /* calc that changes the font-size with screen width */
+    font-size: calc(20px + (44 -20) * ((100vw - 300px) / (1600 - 300)));
+}
+
+/* site navigation */
+
+.sitenavigation {
+    width: 100%;
+    overflow: auto;
+    background-color: rgb(126, 61, 61);
+}
+.nav-top ul, .nav-bottom ul {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+.nav-top li, .nav-bottom li {
+    display: inline-block;
+}
+.nav-top a, .nav-bottom a {
+    display: block;
+    border: 1px solid rgb(0, 0, 0);
+    background-color: rgb(89, 132, 139);
+    margin: 2px;
+    /* float: left; */
+    padding: 10px;
+    color: black;
+    text-decoration: none;
+    font-size: 17px;
+    width: 250px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.sitenavigation a:visited {
+    color: rgb(112, 97, 64);
+    background-color: rgb(134, 153, 152);
+}
+.sitenavigation a:hover, .sitenavigation a:focus {
+    color: rgb(136, 7, 14);
+    background-color: rgb(126, 123, 123);
+    
+} 
+/* body styling*/
+body {
+    background-color: lightblue;
+    margin: 0;
+    min-height: 100vh;
+    position: relative;
+    padding-bottom: 50px;
+    font-family: 'Roboto', 'sans-serif';
+}
+/* Home/index page styling */
+article#statement {
+    
+    display: flex;
+    flex-flow: column nowrap;
+    max-width: 70%;
+    margin: 15px auto;
+    
+}
+article#statement > * {
+    align-self: center;
+    
+}
+#statement p {
+    /* margin: 20px 30px; */
+    background-color: seashell;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: calc(11pt + (12 -11) * ((100vw - 200px) / (1600 - 200)));
+    /* text-align: center; */
+    /* flex-basis: 700px; */
+}
+#statement h2 {
+    text-align: center;
+}
+div.flex-columns {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+div.flex-columns div {
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: seashell;
+    flex-basis: 250px;
+    margin: 20px 20px;
+}
+div.flex-columns h2 {
+    text-align: center;
+}
+div.frontImage {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    margin: 15px 0;
+}
+div.frontImage > * {
+    align-self: center;
+}
+
+
+/* races page */
+
+article#races > p {
+    background-color: seashell;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 15px;
+    max-width: 70%;
+    margin: 15px auto;
+    font-size: calc(11pt + (12 -11) * ((100vw - 200px) / (1600 - 200)));
+}
+article#races h2 {
+    text-align: center;
+}
+
+div.raceTips > div {
+    border-radius: 20px;
+    padding: 15px;
+    max-width: 280px;
+    margin: 10px auto;
+    background-color: seashell;
+    border: 1px solid black;
+    /* font-size: calc(10px + (12 -10) * ((100vw - 300px) / (1600 - 300))); */
+}
+/* training page */
+article#training > p {
+    background-color: seashell;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 15px;
+    max-width: 70%;
+    margin: 15px auto;
+    font-size: calc(11pt + (12 -11) * ((100vw - 200px) / (1600 - 200)));
+}
+article#training h2 {
+    text-align: center;
+}
+.distances {
+   text-align: center;
+   font-size: 1.2em;
+   /* margin: 0;  */
+}
+.distances p {
+    background-color: slategrey;
+    /* margin: 0; */
+    padding: 0.2em 0.4em;
+    border: 3px solid black;
+    display: inline-block;
+    border-radius: 10px;
+    cursor: pointer;
+    max-width: 100%;
+}
+.distances p:hover {
+    background-color: rgb(196, 177, 12);
+    color: white;
+}
+
+table {
+    max-width: 100%;
+    margin: 15px auto;
+    border: 5px solid black;
+    font-size: calc(11px + (12 -11) * ((100vw - 200px) / (1600 - 200)));
+}
+th, td {
+    border: 1px solid black;
+    padding: 0.5em;
+}
+th {
+    background-color: white;
+}
+.fivek-schedule, .tenk-schedule, .tenmiler-schedule, .half-schedule, .full-schedule {
+    display: none;
+}
+.fivek-training, .tenk-training, .tenmiler-training, .half-training, .full-training {
+    display: none;
+}
+.show {
+    display: block;
+}
+h3 {
+    text-align: center;
+}
+input[type=button], input[type=reset] {
+    line-height: 10px;
+    width: 150px;
+    margin: 0 auto;
+}
+
+/* Gear page styling */
+div#gear {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-end;
+}
+div#gear > * {
+    align-self: center;
+}
+
+.aboutGear > h2 {
+    text-align: center;
+}
+.aboutGear p {
+    background-color: seashell;
+    border: 2px solid black;
+    border-radius: 20px;
+    max-width: 70%;
+    margin: 20px auto;
+    padding: 15px;
+    font-size: calc(11pt + (12 -11) * ((100vw - 200px) / (1600 - 200)));
+}
+div.gearFadeIn {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+div.gearFadeIn .summerGear {
+    display: none;
+    flex-basis: 200px;
+}
+div.gearFadeIn .winterGear {
+    display: none;
+    flex-basis: 200px;
+}
+div.gearFadeIn .raceGear {
+    display: none;
+    flex-basis: 200px;
+}
+.summerGear p {
+    background-color: seashell;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+.winterGear p {
+    background-color: seashell;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+.raceGear p {
+    background-color: seashell;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+.gearButton button:hover {
+    background-color: rgb(196, 177, 12);
+    
+}
+div.gearFadeIn img {
+    width: 200px;
+    height: 200px;
+    margin: 10px 10px;
+}
+#fullGear {
+    width: 400px;
+    height: 400px;
+}
+.summerBtn, .winterBtn, .raceBtn {
+        background-color: slategrey;
+        margin: 10px;
+        padding: 0.2em 0.4em;
+        border: 3px solid black;
+        border-radius: 10px;
+        cursor: pointer;
+        font-size: calc(12px + (15 -12) * ((100vw - 300px) / (1600 - 300)));
+}
+
+/* contact us page/form */
+label {
+    padding:10px;
+}
+article#contentstart {
+    display: flex;
+    flex-flow: column nowrap; 
+    justify-content: flex-end; 
+}
+article#contentstart > h2 {
+    align-self: center;
+    margin: 10px 10px;
+    padding: 10px 10px;
+}
+article#contentstart p {
+    align-self: center;
+    margin: 10px 10px;
+    padding: 10px 10px;
+}
+form {
+    align-self: center;
+}
+form.contact-form {
+    border: 2px solid black;
+    background-color: rgb(211, 154, 48);
+    border-radius: 20px;
+    margin: 20px;
+    padding: 10px;
+}
+.form-instructions {
+    color: red;
+    text-align: center;
+}
+fieldset {
+    margin-bottom: 0.8em;
+}
+input, textarea {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+label {
+    margin: 0.3em 0;
+    font-size: 1em;
+    line-height: 1.6em;
+    font-weight: bold;
+}
+.formButton {
+    border: none;
+    padding: 0.4em 0.6em;
+    margin: 10px auto;
+    
+}
+#submit, #reset {
+    padding: 0.4em 0.6em;
+    margin: 10px auto;
+    font-size:1Sem;
+    border-radius: 10px;
+    width: 25%;
+}
+
+/* error messages */
+#error, #error1 {
+    color: red;
+}
+/* project concepts */
+
+section {
+    background-color: seashell;
+    border: 1px solid black;
+    border-radius: 20px;
+    color: black;
+    padding: 15px;
+    margin-top: 15px;
+    max-width: 70%;
+    margin: 15px auto;
+}
+footer {
+    background-color: #333;
+    text-align: center;
+    color: white;
+    padding: 10px 0;
+}
+.footer {
+    
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* width: 100%; */
+    /* height: 50px; */
+}
+address > a {
+    color: yellow;
+}
+
+
+/* Mobile screen */
+@media only screen and (max-width: 480px) {
+    div.distances p {
+        display: flex;
+        flex-flow: column nowrap;
+        margin: 10px 70px;
+    }
+    #fullGear {
+        width: 300px;
+        height: 300px;
+    }
+    .fivek-training, .tenk-training, .tenmiler-training, .half-training, .full-training {
+        font-size: 14pt;
+    }
+    .fivek-schedule, .tenk-schedule, .tenmiler-schedule, .half-schedule, .full-schedule {
+        font-size: 14pt;
+    }
+}
+/* for tablets */
+@media only screen and (min-width: 600px) {
+    .nav-top a, .nav-bottom a {
+        padding: 9px;
+        width: 150px;
+    }
+}
+/* desktop and labtop screens */
+@media only screen and (min-width: 960px) {
+    .nav-top a, .nav-bottom a {
+        width: 250px;
+    }
+}

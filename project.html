@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What I learned from Javascript</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+</head>
+
+<body>
+    <header>
+        <img src="images/runnerbanner.jpg" class="banner" alt="picture of a guy running on the road">
+        <h1 id="title">Running 4 Beginners</h1>
+    </header>
+    <nav class="sitenavigation">
+        <div class="nav-top">
+            <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="training.html">Training</a></li>
+            <li><a href="race.html">Races</a></li>
+        </ul>
+        </div>
+        <div class="nav-bottom">
+            <ul>
+            <li><a href="gear.html">Gear</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+            <li><a href="project.html">Project Concepts</a></li>
+        </ul>
+        </div>
+    </nav>
+    <div class="flex-section">
+        <section>
+            <h3>Functions, if else statements, Working within the DOM</h3>
+            <p>Javascript added to my training page is doing a couple things here. First, I set up functions that work
+                with buttons to show and hide tables. Working with css, all the tables are hidden until a button is
+                clicked. I set up an event listener to react when that button is clicked. Only once that button is
+                clicked will it show the related table. The tables data if gathered by a query selector for each of the
+                5 tables. Second, I have other functions that pull values from the html by Id. These values get tested
+                with if/else statements to display an appropriate message.</p>
+            <p>Check it out on my Training page <a href="training.html">here</a></p>
+        </section>
+        <section>
+            <h3>Functions, Loops, Arrays</h3>
+            <p>This page works similar to the Training page with a few modifications. The same concepts are being used
+                as the training page but this time I set up objects that hold arrays for the data. This will get pushed
+                to the html page of Races Near You. I have a for loop that gets information from the arrays in the
+                object with a length property. I have variables that look for Ids in this page and use inner.html to
+                attatch the information to a table.</p>
+            <p>Check it out on my Races page <a href="race.html">here</a></p>
+        </section>
+        <section>
+            <h3>jQuery</h3>
+            <p>I used javascript on my Gear page that uses jQuery to display images and text related to the items for
+                various events. The jQuery I decided to use here was a fade in and fade out. When a button is clicked it
+                takes the previous image/images and fades them out and fades in the new pictures and text for that
+                button.</p>
+            <p>Check it out on my Gear page <a href="gear.html">here</a></p>
+        </section>
+        <section>
+            <h3>jQuery and Forms & Validation</h3>
+            <p>I have javascript on my Contact Us page to validate information the user types in or doesn't put in. If a
+                field if required and the user doesn't supply that information and clicks the submit button a message
+                will appear in red telling them that they missed a that field with an appropriate message on the top of
+                the form. I also, decided to use jQuery to show the user what field they are on with focus that changes
+                the background color. Then if the user clicks away from a required field I have blur property that
+                changes the background color to red, showing that they need to fill out that field.</p>
+            <p>Check it out on my Contact Us page <a href="contactus.html">here</a></p>
+        </section>
+        <section>
+            <h3>if/else statement, Variables and data types, Comparison operators, jQuery</h3>
+            <p>Back in the Training page I used javascript to take values in from the inputs and add them up. I then
+                used if else statements to show how many miles a person ran (actual) then compare that to a preset
+                number (goal). I have a blank id span element to fill in what the user got for the week. I have the
+                variables take in the input values that also allow decimal numbers up to 2 spaces.</p>
+            <p>Added a last minute jQuery feature. The numbers that get pulled after you click the "check your results"
+                button, jQuery changes the text color to the numbers. Runs with an if else statement that checks if a
+                goal was reached, green for yes and red for no.</p>
+            <p>Check it out on my Training page <a href="training.html">here</a></p>
+        </section>
+    </div>
+    <footer class="footer">
+        <address>Running 4 Beginners &#8226; 123 Example Ave, Glendale Az &#8226; Email: <a
+                href="mailto:example@example.com">Begin2run@example.com</a></address>
+    </footer>
+</body>
+
+</html>

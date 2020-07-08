@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Training for Races</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+</head>
+
+<body>
+
+    <header>
+        <img src="images/runnerbanner.jpg" class="banner" alt="picture of a guy running on the road">
+        <h1 id="title">Running 4 Beginners</h1>
+    </header>
+    <nav class="sitenavigation">
+        <div class="nav-top">
+            <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="training.html">Training</a></li>
+            <li><a href="race.html">Races</a></li>
+        </ul>
+        </div>
+        <div class="nav-bottom">
+            <ul>
+            <li><a href="gear.html">Gear</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+            <li><a href="project.html">Project Concepts</a></li>
+        </ul>
+        </div>
+    </nav>
+    <article id="training">
+        <h2>Training Schedule</h2>
+
+        <p>We have set up a couple tables to get you started with your documentation. Feel free to create your own. In
+            the beginning, many new runners stumble. You start out with the best intentions - but a few minutes later
+            you want to quit. Just remember this takes time. Don't be afraid to utilize a walk/run method.If distance is
+            not your pace yet, set a time and just make it to that point. You'll be suprised at how fast you are going
+            to progress everyday!</p>
+        <div class="distances">
+            <h4>Click on a distance to get training schedules</h4>
+            <p class="fivek-button">5K</p>
+            <p class="tenk-button">10K</p>
+            <p class="tenmiler-button">10 Miler</p>
+            <p class="half-button">Half Marathon</p>
+            <p class="full-button">Marathon</p>
+
+        </div>
+        <div class="fivek-training">
+            <h3>5K</h3>
+            <table>
+                <thead>
+                    <td>Day</td>
+                    <td>Target</td>
+                    <td>Reached</td>
+                </thead>
+                <tr>
+                    <td>Monday</td>
+                    <td>1 Miles</td>
+                    <td><input type="number" id="5kDay1" min="0"></td>
+                </tr>
+                <tr>
+                    <td>Tuesday</td>
+                    <td>1.5 Miles</td>
+                    <td><input type="number" id="5kDay2" min="0"></td>
+                </tr>
+                <tr>
+                    <td>Wednesday</td>
+                    <td>1 Miles</td>
+                    <td><input type="number" id="5kDay3" min="0"></td>
+                </tr>
+                <tr>
+                    <td>Thursday</td>
+                    <td>1.5 Miles</td>
+                    <td><input type="number" id="5kDay4" min="0"></td>
+                </tr>
+                <tr>
+                    <td>Friday</td>
+                    <td>1 Miles</td>
+                    <td><input type="number" id="5kDay5" min="0"></td>
+                </tr>
+                <tr>
+                    <td>Saturday</td>
+                    <td>1.5 Miles</td>
+                    <td><input type="number" id="5kDay6" min="0"></td>
+                </tr>
+                <tr>
+                    <td>Sunday</td>
+                    <td>1 Miles</td>
+                    <td><input type="number" id="5kDay7" min="0"></td>
+                </tr>
+                <tr>
+                    <td>Total Miles:</td>
+                    <td>Goal: <span id="goalMiles"></span></td>
+                    <td>Actual: <span id="actualGoal"></span></td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <input type="button" value="See Your Results" onclick="fiveK()">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <h3 id="goalOutput1"></h3>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="tenk-training">
+            <h3>10K</h3>
+            <table>
+                <thead>
+                    <td>Day</td>
+                    <td>Target</td>
+                    <td>Reached</td>
+                </thead>
+                <tr>
+                    <td>Monday</td>
+                    <td>2 Miles</td>
+                    <td><input type="number" id="10kDay1" min="0"></td>
+                </tr>
+                <tr>
+                    <td>Tuesday</td>
+                    <td>2.5 Miles</td>
+                    <td><input type="number" id="10kDay2" min="0"></td>
+                </tr>
+                <tr>
+                    <td>Wednesday</td>
+                    <td>2 Miles</td>
+                    <td><input type="number" id="10kDay3" min="0"></td>
+                </tr>
+                <tr>
+                    <td>Thursday</td>
+                    <td>2.5 Miles</td>
+                    <td><input min="0" type="number" id="10kDay4"></td>
+                </tr>
+                <tr>
+                    <td>Friday</td>
+                    <td>2 Miles</td>
+                    <td><input min="0" type="number" id="10kDay5"></td>
+                </tr>
+                <tr>
+                    <td>Saturday</td>
+                    <td>2.5 Miles</td>
+                    <td><input min="0" type="number" id="10kDay6"></td>
+                </tr>
+                <tr>
+                    <td>Sunday</td>
+                    <td>2 Miles</td>
+                    <td><input min="0" type="number" id="10kDay7"></td>
+                </tr>
+                <tr>
+                    <td>Total Miles:</td>
+                    <td>Goal: <span id="goalMiles1"></span></td>
+                    <td>Actual: <span id="actualGoal1"></span></td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <input type="button" value="See Your Results" onclick="tenK()">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <h3 id="goalOutput2"></h3>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="tenmiler-training">
+            <h3>10 Miler</h3>
+            <table>
+                <thead>
+                    <td>Day</td>
+                    <td>Target</td>
+                    <td>Reached</td>
+                </thead>
+                <tr>
+                    <td>Monday</td>
+                    <td>3 Miles</td>
+                    <td><input min="0" type="number" id="10milerDay1"></td>
+                </tr>
+                <tr>
+                    <td>Tuesday</td>
+                    <td>3 Miles</td>
+                    <td><input min="0" type="number" id="10milerDay2"></td>
+                </tr>
+                <tr>
+                    <td>Wednesday</td>
+                    <td>3 Miles</td>
+                    <td><input min="0" type="number" id="10milerDay3"></td>
+                </tr>
+                <tr>
+                    <td>Thursday</td>
+                    <td>3 Miles</td>
+                    <td><input min="0" type="number" id="10milerDay4"></td>
+                </tr>
+                <tr>
+                    <td>Friday</td>
+                    <td>3 Miles</td>
+                    <td><input min="0" type="number" id="10milerDay5"></td>
+                </tr>
+                <tr>
+                    <td>Saturday</td>
+                    <td>3 Miles</td>
+                    <td><input min="0" type="number" id="10milerDay6"></td>
+                </tr>
+                <tr>
+                    <td>Sunday</td>
+                    <td>3 Miles</td>
+                    <td><input min="0" type="number" id="10milerDay7"></td>
+                </tr>
+                <tr>
+                    <td>Total Miles:</td>
+                    <td>Goal: <span id="goalMiles2"></span></td>
+                    <td>Actual: <span id="actualGoal2"></span></td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <input type="button" value="See Your Results" onclick="tenMiler()">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <h3 id="goalOutput3"></h3>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="half-training">
+            <h3>Half Marathon</h3>
+            <table>
+                <thead>
+                    <td>Day</td>
+                    <td>Target</td>
+                    <td>Reached</td>
+                </thead>
+                <tr>
+                    <td>Monday</td>
+                    <td>4 Miles</td>
+                    <td><input min="0" type="number" id="halfDay1"></td>
+                </tr>
+                <tr>
+                    <td>Tuesday</td>
+                    <td>4 Miles</td>
+                    <td><input min="0" type="number" id="halfDay2"></td>
+                </tr>
+                <tr>
+                    <td>Wednesday</td>
+                    <td>4.5 Miles</td>
+                    <td><input min="0" type="number" id="halfDay3"></td>
+                </tr>
+                <tr>
+                    <td>Thursday</td>
+                    <td>4 Miles</td>
+                    <td><input min="0" type="number" id="halfDay4"></td>
+                </tr>
+                <tr>
+                    <td>Friday</td>
+                    <td>4 Miles</td>
+                    <td><input min="0" type="number" id="halfDay5"></td>
+                </tr>
+                <tr>
+                    <td>Saturday</td>
+                    <td>4 Miles</td>
+                    <td><input min="0" type="number" id="halfDay6"></td>
+                </tr>
+                <tr>
+                    <td>Sunday</td>
+                    <td>4 Miles</td>
+                    <td><input min="0" type="number" id="halfDay7"></td>
+                </tr>
+                <tr>
+                    <td>Total Miles:</td>
+                    <td>Goal: <span id="goalMiles3"></span></td>
+                    <td>Actual: <span id="actualGoal3"></span></td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <input type="button" value="See Your Results" onclick="half()">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <h3 id="goalOutput4"></h3>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="full-training">
+            <h3>Full Marathon</h3>
+            <table>
+                <thead>
+                    <td>Day</td>
+                    <td>Target</td>
+                    <td>Reached</td>
+                </thead>
+                <tr>
+                    <td>Monday</td>
+                    <td>6 Miles</td>
+                    <td><input min="0" type="number" id="fullDay1"></td>
+                </tr>
+                <tr>
+                    <td>Tuesday</td>
+                    <td>3 Miles</td>
+                    <td><input min="0" type="number" id="fullDay2"></td>
+                </tr>
+                <tr>
+                    <td>Wednesday</td>
+                    <td>6.5 Miles</td>
+                    <td><input min="0" type="number" id="fullDay3"></td>
+                </tr>
+                <tr>
+                    <td>Thursday</td>
+                    <td>3 Miles</td>
+                    <td><input min="0" type="number" id="fullDay4"></td>
+                </tr>
+                <tr>
+                    <td>Friday</td>
+                    <td>6.5 Miles</td>
+                    <td><input min="0" type="number" id="fullDay5"></td>
+                </tr>
+                <tr>
+                    <td>Saturday</td>
+                    <td>3 Miles</td>
+                    <td><input min="0" type="number" id="fullDay6"></td>
+                </tr>
+                <tr>
+                    <td>Sunday</td>
+                    <td>7 Miles</td>
+                    <td><input min="0" type="number" id="fullDay7"></td>
+                </tr>
+                <tr>
+                    <td>Total Miles:</td>
+                    <td>Goal: <span id="goalMiles4"></span></td>
+                    <td>Actual: <span id="actualGoal4"></span></td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <input type="button" value="See Your Results" onclick="full()">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <h3 id="goalOutput5"></h3>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </article>
+    <footer class="footer">
+        <address>Running 4 Beginners &#8226; 123 Example Ave, Glendale Az &#8226; Email: <a
+                href="mailto:example@example.com">Begin2run@example.com</a></address>
+    </footer>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js'></script>
+    <script src="js/training.js"></script>
+</body>
+
+</html>
